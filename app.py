@@ -16,7 +16,7 @@ def index():
         articles_content = [extract_article_content(url) for url in articles_urls]
         
         # Perform NLP analysis
-        similarity_scores = calculate_similarity(user_text, articles_content)
+        similarity_scores = (calculate_similarity(user_text, articles_content))
         classification = classify_fake_news(similarity_scores)
         
         # Save results
@@ -28,6 +28,4 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    # Use production-ready WSGI server
-    from waitress import serve
-    serve(app, host="0.0.0.0", port=8080)
+    app.run(debug=True)
