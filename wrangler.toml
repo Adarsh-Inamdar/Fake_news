@@ -1,0 +1,12 @@
+name = "flask-worker"
+type = "javascript"
+
+[build]
+command = "npm install && npm run build"
+
+[workers_dev]
+# this will run in development mode
+preview = true
+
+[env.production]
+workers_dev = false
