@@ -28,32 +28,6 @@ def calculate_similarity(user_text, articles):
         print(f"Error in calculating similarity: {e}")
         return []
 
-'''
-def classify_fake_news(similarity_scores, threshold=0.6):
-    """
-    Classifies the news as Real or Fake based on similarity scores.
-
-    Args:
-        similarity_scores (list): Cosine similarity scores between user text and articles.
-        threshold (float): The threshold value to classify as Real or Fake.
-
-    Returns:
-        str: Classification result ("Real" or "Fake").
-    """
-    if not similarity_scores:
-        return "Unable to classify due to missing or invalid similarity scores."
-
-    # Calculate the average similarity score
-    avg_similarity = sum(similarity_scores) / len(similarity_scores)
-
-    # Classify as Real or Fake based on the threshold
-    if avg_similarity >= threshold:
-        return "Real"
-    else:
-        return "Fake"
-'''
-
-
 def classify_fake_news(similarity_scores, threshold=0.5):
     """
     Classifies the news as Real or Fake based on similarity scores.
