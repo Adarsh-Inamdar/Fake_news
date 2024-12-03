@@ -3,5 +3,3 @@ Requests
 BeautifulSoup4
 sentence-transformers
 torch
-json
-math
