@@ -1,9 +1,8 @@
-
 Flask
 Requests
 BeautifulSoup4
-'Sentence Transformers'
-Torch
+sentence-transformers
+torch
 os
 json
 math
