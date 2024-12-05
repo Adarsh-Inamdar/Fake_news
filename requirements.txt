@@ -3,3 +3,6 @@ Requests
 BeautifulSoup4
 sentence-transformers
 torch
+bs4
+newspaper3k
+
